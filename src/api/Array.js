@@ -1,4 +1,27 @@
 /**
+ * new Array()
+ * 语法: new Array(ele0, ele1[, ...[, eleN]])
+ * 语法: new Array(arrayLength)
+ */
+var arr = new Array(1, 2)
+console.log(arr) // [ 1, 2 ]
+
+var arr2 = new Array(2)
+console.log(arr2) // [ <2 empty items> ] 此时是个空数组
+arr2.fill(1)
+console.log(arr2) // [ 1, 1 ]
+
+var arr3 = new Array('2')
+console.log(arr3) // [ '2' ]
+
+/**
+ * fill()
+ */
+var arr = new Array(3)
+arr.fill(0)
+console.log(arr) // [ 0, 0, 0 ]
+
+/**
  * sort()
  * 对数组进行排序
  * 入参: 函数
